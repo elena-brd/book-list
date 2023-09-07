@@ -44,4 +44,15 @@ function createIcon(classes) {
     return icon;
 }
 
+
+function removeBook(e) {
+    if (e.target.parentElement.classList.contains('btn-delete')) {
+        confirm('Are you sure?')
+        e.target.parentElement.parentElement.remove()
+    }
+}
+
+
+
 form.addEventListener('submit', addBooks);
+bookList.addEventListener('click', removeBook)
