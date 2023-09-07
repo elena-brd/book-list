@@ -43,19 +43,33 @@ body {
     color: #fff;
 }
 
+.allert {
+    margin-top: 1rem;
+    background: #de0e0e;
+    color: #fff;
+    padding: 0.3rem 0.5rem;
+    border-radius: 3px;
+    display: none;
+}
+
+.success {
+    margin-top: 1rem;
+    background: #14aa00;
+    color: #fff;
+    padding: 0.3rem 0.5rem;
+    border-radius: 3px;
+    display: none
+}
+
 ul {
     list-style: none;
 }
 
 .container {
     display: flex;
-    /* height: 100vh; */
 }
 
-
 .card-content {
-    overflow-y: none;
-    overflow-x: none;
     background: #fff;
     width: 600px;
     margin: 7rem auto;
@@ -76,7 +90,7 @@ ul {
 }
 
 .form-container {
-    padding: 2.5rem 0 2rem;
+    padding: 1.5rem 0 2rem;
 }
 
 .form-control label {

@@ -1,6 +1,8 @@
 const form = document.getElementById('form-input');
 const formInput = document.getElementById('book-info');
 const bookList = document.getElementById('book-list');
+const allertMsg = document.querySelector('.allert');
+const successtMsg = document.querySelector('.success');
 
 function addBooks(e) {
     e.preventDefault()
@@ -8,13 +10,20 @@ function addBooks(e) {
     const newItem = formInput.value;
 
     if (newItem === '') {
-        alert('Please add a book')
+        allertMsg.style.display = 'block';
+        setTimeout(() => {
+            allertMsg.style.display = 'block';
+            allertMsg.remove()
+        }, 3000)
     } else {
-        createBookItem(newItem)
+        createBookItem(newItem);
+        successtMsg.style.display = 'block';
+        setTimeout(() => {
+            successtMsg.style.display = 'block';
+            successtMsg.remove()
+        }, 3000)
     }
-
     formInput.value = '';
-
 }
 
 
@@ -51,7 +60,6 @@ function removeBook(e) {
         e.target.parentElement.parentElement.remove()
     }
 }
-
 
 
 form.addEventListener('submit', addBooks);
