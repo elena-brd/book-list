@@ -18,66 +18,40 @@
             <section class="form-container">
                 <form id="form-input">
                     <div class="form-control">
-                        <label for="title">Title</label>
-                        <input type="text" id="title">
+                        <label for="book-info">Add books to read</label>
+                        <input type="text" id="book-info" placeholder="e.g Atomic Habits, James Clear">
                     </div>
-                    <div class="form-control">
+                    <!-- <div class="form-control">
                         <label for="author">Author</label>
                         <input type="text" id="author">
                     </div>
                     <div class="form-control">
                         <label for="category">Category</label>
                         <input type="text" id="category">
-                    </div>
+                    </div> -->
                     <button type="submit" class="btn btn-submit">Add Book</button>
                 </form>
             </section>
 
-            <section class="book-list">
-                <div class="title-info info">
-                    <div>
-                        <h3>Title</h3>
-                        <p>Lorem, ipsum.</p>
-                    </div>
-                    <div>
-                        <h3>Title</h3>
-                        <p>Lorem, ipsum.</p>
-                    </div>
+            <section class="book-container">
+                <ul id="book-list" class="books">
+                    <li>
+                        Missery, Stephen King
+                        <button class="remove-item btn-link text-red btn-delete">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </li>
+                    <li>
+                        Becoming Supernatural, Joe Dispenza
+                        <button class="remove-item btn-link text-red btn-delete">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </li>
+                </ul>
 
-
-                </div>
-                <div class="author-info info">
-                    <div>
-                        <h3>Author</h3>
-                        <p>Lorem, ipsum.</p>
-                    </div>
-                    <div>
-                        <h3>Author</h3>
-                        <p>Lorem, ipsum.</p>
-                    </div>
-                </div>
-                <div class="category-info info">
-                    <div>
-                        <h3>Category</h3>
-                        <p>Lorem, ipsum.</p>
-                    </div>
-                    <div>
-                        <h3>Category</h3>
-                        <p>Lorem, ipsum.</p>
-                    </div>
-                </div>
             </section>
         </div>
 
-        <!-- <div class="card-image">
-            <div class="img-1">
-                <img src="./img/showcase.jpg" alt="">
-            </div>
-            <div class="img-2">
-                <img src="./img/showcase-6.jpg" alt="">
-            </div>
-
-        </div> -->
     </div>
 
 

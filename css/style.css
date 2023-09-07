@@ -5,6 +5,14 @@
 }
 
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('../img/showcase-2.jpg') no-repeat center center/cover;
+    color: #181818;
+    height: 100vh;
+    padding: 0 2rem;
+}
+
 .btn {
     cursor: pointer;
     display: inline-block;
@@ -26,13 +34,17 @@
     font-weight: 600;
 }
 
+.btn-delete {
+    cursor: pointer;
+    background: #8c2f39;
+    padding: 0.2rem 0.5rem;
+    border-radius: 2px;
+    border: none;
+    color: #fff;
+}
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: url('../img/showcase-2.jpg') no-repeat center center/cover;
-    color: #181818;
-    height: 100vh;
-    padding: 0 2rem;
+ul {
+    list-style: none;
 }
 
 .container {
@@ -85,23 +97,13 @@ body {
     border: 1.8px solid #8c2f39;
 }
 
-.book-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.book-list h3 {
-    font-weight: 500;
-}
-
-.info div {
-    padding: 0.3rem;
-    margin: 1rem 0;
+.books li {
+    display: flex;
+    justify-content: space-between;
     background: #fff3ed;
-    color: #333;
-    padding-left: 0.5rem;
-}
-
-/* .info {
+    border: 1px solid #fcb9b2;
+    border-radius: 5px;
     margin: 1rem 0;
-} */
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
